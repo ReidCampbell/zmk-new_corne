@@ -64,15 +64,15 @@
             //                                                      enter
 
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T          &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S      &kp D     &kp F  &kp G          &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                  &kp SPACE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 ENTER  &mo 2  &kp RALT
-                                                             &kp ENTER
+&kp TAB    &kp Q               &kp W           &kp E           &kp R             &kp T          &kp UP_ARROW     &kp Y        &kp U              &kp I            &kp O            &kp P                        &kp BSPC
+&td0       &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G          &kp DOWN_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LCTRL  &kp Z               &kp X           &kp C           &kp V             &kp B          &kp LEFT_ARROW   &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH                     &kp ESC
+                               &kp SPACE       &kp LGUI        &kp TAB           &lt 1 SPACE    &kp RIGHT_ARROW  &lt 2 ENTER  &kp BACKSPACE      &kp ESC
+                                                                                                &kp ENTER
             >;
 
             label = "QWERTY";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_BACK K_FORWARD>;
         };
 
         lower_layer {
@@ -93,7 +93,7 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         raise_layer {
