@@ -71,7 +71,7 @@
             >;
 
             label = "QWERTY";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
