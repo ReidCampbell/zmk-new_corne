@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
   - I
@@ -20,7 +20,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: RIGHT GUI}
@@ -33,7 +33,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - N
   - M
   - {t: ',', s: <}
@@ -44,7 +44,7 @@ layers:
   - {t: '4', h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: raise}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', h: lower}
   - {t: '$$mdi:backspace$$', h: lower}
   - $$mdi:keyboard-esc$$
