@@ -85,7 +85,7 @@
 
             bindings = <
 &bt BT_NXT  &trans  &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans        &trans            &trans         &trans    &kp BSPC
-&trans      &trans  &trans       &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT      &kp HOME  &kp PG_UP
+&to 5       &trans  &trans       &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT      &kp HOME  &kp PG_UP
 &trans      &trans  &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &kp END   &kp PG_DN
                     &kp LS(F12)  &kp KP_NUMBER_0  &trans           &kp LEFT_ALT       &mmv MOVE_RIGHT  &kp INS             &kp DEL       &trans
                                                                                       &mkp LCLK
@@ -144,7 +144,7 @@
 
         layer_5 {
             bindings = <
-&kp TAB    &kp Q      &kp W   &kp E  &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp Q      &kp W   &kp E  &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans  &to 0
 &trans     &kp A      &kp S   &kp D  &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LCTRL  &kp X   &kp C  &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &trans
                       &trans  &kp C  &kp SPACE  &kp LCTRL    &trans  &trans  &trans  &trans
