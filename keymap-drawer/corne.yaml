@@ -42,8 +42,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - {t: '4', h: toggle}
-  - {t: '$$mdi:keyboard-tab$$', h: raise}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-space$$', h: raise}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', h: lower}
   - {t: '$$mdi:backspace$$', h: lower}
@@ -59,7 +59,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -70,11 +70,11 @@ layers:
   - KP 5
   - KP 6
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - HOME
+  - END
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -87,7 +87,7 @@ layers:
   - Alt+ $$mdi:arrow-down-bold$$
   - Alt+ $$mdi:arrow-up-bold$$
   - Alt+ $$mdi:arrow-right-bold$$
-  - END
+  - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
   - Sft+ F12
   - KP 0
