@@ -211,17 +211,17 @@ layers:
   - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - C
-  - R
-  - S
-  - T
+  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - M
-  - N
-  - E
-  - I
-  - A
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: RIGHT GUI}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
