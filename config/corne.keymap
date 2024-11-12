@@ -34,7 +34,6 @@
             delay-ms = <0>;                   // 10
         };
 
-        mt { tapping-term-ms = <400>; };
     };
 
     rgb_encoder: rgb_encoder {
