@@ -57,7 +57,7 @@
 
         Arrow {
             bindings = <&Arrow>;
-            key-positions = <9 10>;
+            key-positions = <10 11>;
         };
 
         Copy {
