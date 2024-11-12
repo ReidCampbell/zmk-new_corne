@@ -109,6 +109,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <22 23>;
         };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16 17>;
+        };
     };
 
     macros {
@@ -203,11 +208,11 @@
 
         layer_4 {
             bindings = <
-&trans  &kp W               &kp L           &kp Y           &kp P             &kp B     &trans  &kp Z   &kp F              &kp O            &kp U            &kp APOS             &trans
-&trans  &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G     &trans  &kp M   &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL A  &trans
-&trans  &kp Q               &kp J           &kp V           &kp D             &kp K     &trans  &kp X   &kp H              &kp FSLH         &kp COMMA        &kp DOT              &trans
-                            &trans          &trans          &trans            &trans    &trans  &trans  &trans             &tog 0
-                                                                                        &trans
+&trans  &kp W               &kp L           &kp Y           &kp P             &kp B               &trans  &kp Z      &kp F              &kp O            &kp U            &kp APOS             &trans
+&trans  &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G               &trans  &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL A  &trans
+&trans  &kp Q               &kp J           &kp V           &kp D             &kp K               &trans  &kp X      &kp H              &kp FSLH         &kp COMMA        &kp DOT              &trans
+                            &trans          &trans          &lt 2 SPACE       &mt LEFT_GUI TAB    &trans  &kp ENTER  &lt 1 BACKSPACE    &kp ESC
+                                                                                                  &trans
             >;
 
             label = "Canary";
