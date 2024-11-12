@@ -32,10 +32,6 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-&leader {  // leader-key config
-    timeout-ms = <650>;
-};
-
 /* Homerow mods */
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
