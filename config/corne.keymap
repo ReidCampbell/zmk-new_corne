@@ -70,7 +70,7 @@
             key-positions = <10 11>;
         };
 
-        copy_cut_combo {
+        Copy {
             bindings = <&copy_macro>;
             hold-bindings = <&cut_macro>;
             key-positions = <28 29>;
