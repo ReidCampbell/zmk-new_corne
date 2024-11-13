@@ -15,6 +15,14 @@
 
 / {
     behaviors {
+        td_copy_cut: td_copy_cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COPY_CUT";
+            #binding-cells = <0>;
+            bindings = <&copy_macro>, <&cut_macro>;
+            tapping-term-ms = <200>;
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
@@ -71,11 +79,8 @@
         };
 
         copy_cut_combo {
-            bindings = <&copy_macro>;
-            hold-bindings = <&cut_macro>;
+            bindings = <&td_copy_cut>;
             key-positions = <28 29>;
-            timeout-ms = <200>;
-            slow-release;
         };
 
         Paste {
