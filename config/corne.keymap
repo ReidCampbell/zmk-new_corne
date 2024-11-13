@@ -151,14 +151,14 @@
         bindings = <&kp LG(X)>;
     };
 
-    Paste: paste_macro {
+    paste_macro {
         compatible = "zmk,behavior-macro";
         label = "PASTE_MACRO";
         #binding-cells = <0>;
         bindings = <&kp LG(V)>;
     };
 
-    Undo: undo_macro {
+    undo_macro {
         compatible = "zmk,behavior-macro";
         label = "UNDO_MACRO";
         #binding-cells = <0>;
