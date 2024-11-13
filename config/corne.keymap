@@ -12,12 +12,6 @@
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
-#define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 150
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
-#define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2
 
 / {
     behaviors {
@@ -40,103 +34,14 @@
             delay-ms = <0>;                   // 10
         };
 
-        lt {
-            // Increase layer tap time
-            tapping-term-ms = <300>;
-        
-            // Quickly tap-tap-holding the lt button will repeat the tap behavior
-            // For example enter-enter-hold, will output multiple enter while you
-            // keep holding the key.
-            // But holding enter without double tapping, will activate the layer.
-             quick-tap-ms = <200>;
-        
-             flavor = "balanced";
-        };
-
-         // Positional Homerow mods
-        // Homerow mods that prevent accidental activations when rolling keys,
-        // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
-        // qwerty.
-        //
-        // Works by only allowing a mod to activate within tapping-term if
-        // it's on the opposite side of the keyboard or on the same side thumb
-        // keys.
-
-        // Further optimization using urob's timerless homerow mods method:
-        // https://github.com/urob/zmk-config#timeless-homerow-mods
-        hm_l: homerow_mods_left {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
             #binding-cells = <2>;
-            bindings = <&kp>,  <&kp>;
-
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-            hold-trigger-key-positions = <KEYS_R KEYS_T>;
-            hold-trigger-on-release;
-        };
-
-        hm_r: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-            hold-trigger-key-positions = <KEYS_L KEYS_T>;
-            hold-trigger-on-release;
-        };
-
-        hm_shift_l: hm_shift_l {
-                    compatible = "zmk,behavior-hold-tap";
-                    #binding-cells = <2>;
-                    bindings = <&kp>, <&kp>;
-        
-                    flavor = "balanced";
-                    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-                    quick-tap-ms = <175>;
-                    require-prior-idle-ms = <HM_PRIOR_IDLE>;
-        
-                    hold-trigger-key-positions = <KEYS_R KEYS_T>;
-                    // hold-trigger-on-release;
-                };
-        
-                hm_shift_r: hm_shift_r {
-                    compatible = "zmk,behavior-hold-tap";
-                    #binding-cells = <2>;
-                    bindings = <&kp>, <&kp>;
-        
-                    flavor = "balanced";
-                    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-                    quick-tap-ms = <175>;
-                    require-prior-idle-ms = <HM_PRIOR_IDLE>;
-        
-                    hold-trigger-key-positions = <KEYS_L KEYS_T>;
-                    // hold-trigger-on-release;
-                };
-
-  /*
-         * Non-Positional Homerow Mods
-         * Used for &mm_grescm_gui behavior on left hand.
-         *
-         * Usage: &hm LSHFT T
-         * Tap: T
-         * Tap-Tap-Hold: Repeat T
-         * Hold: LSHIFT
-         */
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            global-quick-tap;
         };
 
     };
@@ -235,7 +140,7 @@
         layer_4 {
             bindings = <
 &trans  &kp W               &kp L           &kp Y           &kp P             &kp B               &trans  &kp Z      &kp F              &kp O            &kp U            &kp APOS             &trans
-&trans  &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G               &trans  &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL A  &trans
+&trans  &hrm LEFT_CONTROL &kp C  &hrm LEFT_ALT &kp R  &hrm LEFT_GUI &kp S  &hrm LEFT_SHIFT &kp T  &kp G               &trans  &kp M      &hrm RIGHT_SHIFT &kp N  &hrm RIGHT_GUI &kp E  &hrm RIGHT_ALT &kp I  &hrm RIGHT_CONTROL &kp A  &trans
 &trans  &kp Q               &kp J           &kp V           &kp D             &kp K               &trans  &kp X      &kp H              &kp FSLH         &kp COMMA        &kp DOT              &trans
                             &trans          &tog 4          &lt 4 SPACE       &mt LEFT_GUI TAB    &trans  &kp ENTER  &lt 1 BACKSPACE    &kp ESC
                                                                                                   &trans
@@ -255,7 +160,7 @@
 
             bindings = <
 &bt BT_NXT  &trans  &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans          &kp UP_ARROW      &trans         &trans   &kp BSPC
-&to 5       &trans  &trans       &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
+&to 5       &trans  &trans       &hrm LEFT_GUI &kp KP_N4        &hrm LEFT_SHIFT &kp KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
 &trans      &trans  &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)    &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans   &kp PG_DN
                     &kp LS(F12)  &kp KP_NUMBER_0  &trans           &kp LEFT_ALT       &mmv MOVE_RIGHT  &kp INS             &kp DEL         &trans
                                                                                       &mkp LCLK
