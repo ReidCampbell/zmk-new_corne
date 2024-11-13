@@ -70,18 +70,21 @@
             key-positions = <10 11>;
         };
 
-        Copy {
-            bindings = <&mt LG(X) LG(C)>;
+        copy_cut_combo {
+            bindings = <&copy_macro>;
+            hold-bindings = <&cut_macro>;
             key-positions = <28 29>;
+            timeout-ms = <200>;
+            slow-release;
         };
 
         Paste {
-            bindings = <&kt LG(V)>;
+            bindings = <&paste_macro>;
             key-positions = <29 30>;
         };
 
-        Cut {
-            bindings = <&kt LG(Z)>;
+        Undo {
+            bindings = <&undo_macro>;
             key-positions = <27 28>;
         };
 
@@ -132,6 +135,34 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW";
+        };
+
+        Copy: copy_macro {
+            compatible = "zmk,behavior-macro";
+            label = "COPY_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+        };
+
+        Paste: paste_macro {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+        };
+
+        Cut: cut_macro {
+            compatible = "zmk,behavior-macro";
+            label = "CUT_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+        };
+
+        Undo: undo_macro {
+            compatible = "zmk,behavior-macro";
+            label = "UNDO_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
         };
     };
 
