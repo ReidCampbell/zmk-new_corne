@@ -130,41 +130,41 @@
     };
 
     macros {
-        Arrow: Arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-            label = "ARROW";
-        };
-
-        copy_macro: copy_macro {
-            compatible = "zmk,behavior-macro";
-            label = "COPY_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LG(C)>;
-        };
-
-        cut_macro: cut_macro {
-            compatible = "zmk,behavior-macro";
-            label = "CUT_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LG(X)>;
-        };
-
-        Paste: paste_macro {
-            compatible = "zmk,behavior-macro";
-            label = "PASTE_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V)>;
-        };
-
-        Undo: undo_macro {
-            compatible = "zmk,behavior-macro";
-            label = "UNDO_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LG(Z)>;
-        };
+    Arrow: Arrow {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp EQUAL &kp GT>;
+        label = "ARROW";
     };
+
+    copy_macro: copy_macro {
+        compatible = "zmk,behavior-macro";
+        label = "COPY_MACRO";
+        #binding-cells = <0>;
+        bindings = <&kp LG(C)>;
+    };
+
+    cut_macro: cut_macro {
+        compatible = "zmk,behavior-macro";
+        label = "CUT_MACRO";
+        #binding-cells = <0>;
+        bindings = <&kp LG(X)>;
+    };
+
+    Paste: paste_macro {
+        compatible = "zmk,behavior-macro";
+        label = "PASTE_MACRO";
+        #binding-cells = <0>;
+        bindings = <&kp LG(V)>;
+    };
+
+    Undo: undo_macro {
+        compatible = "zmk,behavior-macro";
+        label = "UNDO_MACRO";
+        #binding-cells = <0>;
+        bindings = <&kp LG(Z)>;
+    };
+};
 
     keymap {
         compatible = "zmk,keymap";
