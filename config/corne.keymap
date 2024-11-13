@@ -70,7 +70,7 @@
             key-positions = <10 11>;
         };
 
-        Copy {
+        copy_cut_combo {
             bindings = <&copy_macro>;
             hold-bindings = <&cut_macro>;
             key-positions = <28 29>;
@@ -137,11 +137,18 @@
             label = "ARROW";
         };
 
-        Copy: copy_macro {
+        copy_macro: copy_macro {
             compatible = "zmk,behavior-macro";
             label = "COPY_MACRO";
             #binding-cells = <0>;
             bindings = <&kp LG(C)>;
+        };
+
+        cut_macro: cut_macro {
+            compatible = "zmk,behavior-macro";
+            label = "CUT_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
         };
 
         Paste: paste_macro {
@@ -149,13 +156,6 @@
             label = "PASTE_MACRO";
             #binding-cells = <0>;
             bindings = <&kp LG(V)>;
-        };
-
-        Cut: cut_macro {
-            compatible = "zmk,behavior-macro";
-            label = "CUT_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LG(X)>;
         };
 
         Undo: undo_macro {
