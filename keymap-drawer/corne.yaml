@@ -298,7 +298,7 @@ combos:
 - p: [10, 11]
   k: '&Arrow'
 - p: [28, 29]
-  k: '&copy_macro'
+  k: '&td_copy_cut'
 - p: [29, 30]
   k: '&paste_macro'
 - p: [27, 28]

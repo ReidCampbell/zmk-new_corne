@@ -548,7 +548,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
@@ -890,7 +890,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
@@ -1203,7 +1203,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
@@ -1512,7 +1512,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
@@ -1837,7 +1837,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
@@ -2138,7 +2138,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="152" width="28" height="26" class="combo"/>
-<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;copy_mac…</tspan></text>
+<text x="168" y="165" class="combo tap"><tspan style="font-size: 60%">&amp;td_copy_…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="152" width="28" height="26" class="combo"/>
