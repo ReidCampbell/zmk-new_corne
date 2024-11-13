@@ -298,11 +298,11 @@ combos:
 - p: [10, 11]
   k: '&Arrow'
 - p: [28, 29]
-  k: {t: C, h: X}
+  k: '&copy_macro'
 - p: [29, 30]
-  k: {t: V, h: toggle}
+  k: '&paste_macro'
 - p: [27, 28]
-  k: {t: Z, h: toggle}
+  k: '&undo_macro'
 - p: [21, 22]
   k: '{'
 - p: [21, 22, 23]
