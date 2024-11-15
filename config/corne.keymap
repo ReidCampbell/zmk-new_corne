@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -20,6 +19,7 @@
             label = "TD_COPY_CUT";
             #binding-cells = <0>;
             bindings = <&copy_macro>, <&cut_macro>;
+
             tapping-term-ms = <200>;
         };
 
@@ -52,7 +52,6 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-
     };
 
     rgb_encoder: rgb_encoder {
@@ -135,52 +134,52 @@
     };
 
     macros {
-    Arrow: Arrow {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp EQUAL &kp GT>;
-        label = "ARROW";
-    };
+        Arrow: Arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROW";
+        };
 
-    copy_macro: copy_macro {
-        compatible = "zmk,behavior-macro";
-        label = "COPY_MACRO";
-        #binding-cells = <0>;
-        bindings = <&kp LG(C)>;
-    };
+        copy_macro: copy_macro {
+            compatible = "zmk,behavior-macro";
+            label = "COPY_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+        };
 
-    cut_macro: cut_macro {
-        compatible = "zmk,behavior-macro";
-        label = "CUT_MACRO";
-        #binding-cells = <0>;
-        bindings = <&kp LG(X)>;
-    };
+        cut_macro: cut_macro {
+            compatible = "zmk,behavior-macro";
+            label = "CUT_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+        };
 
-    paste_macro: paste_macro {
-        compatible = "zmk,behavior-macro";
-        label = "PASTE_MACRO";
-        #binding-cells = <0>;
-        bindings = <&kp LG(V)>;
-    };
+        paste_macro: paste_macro {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+        };
 
-    undo_macro: undo_macro {
-        compatible = "zmk,behavior-macro";
-        label = "UNDO_MACRO";
-        #binding-cells = <0>;
-        bindings = <&kp LG(Z)>;
+        undo_macro: undo_macro {
+            compatible = "zmk,behavior-macro";
+            label = "UNDO_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
+        };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
 
         layer_4 {
             bindings = <
-&trans  &kp W               &kp L           &kp Y           &kp P             &kp B               &trans  &kp Z      &kp F              &kp O            &kp U            &kp APOS             &trans
+&trans  &kp W                &kp L            &kp Y            &kp P              &kp B               &trans  &kp Z      &kp F               &kp O             &kp U             &kp APOS              &trans
 &trans  &hrm LEFT_CONTROL C  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &kp G               &trans  &kp M      &hrm RIGHT_SHIFT N  &hrm RIGHT_GUI E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL A  &trans
-&trans  &kp Q               &kp J           &kp V           &kp D             &kp K               &trans  &kp X      &kp H              &kp FSLH         &kp COMMA        &kp DOT              &trans
-                            &trans          &tog 4          &lt 4 SPACE       &mt LEFT_GUI TAB    &trans  &kp ENTER  &lt 1 BACKSPACE    &kp ESC
-                                                                                                  &trans
+&trans  &kp Q                &kp J            &kp V            &kp D              &kp K               &trans  &kp X      &kp H               &kp FSLH          &kp COMMA         &kp DOT               &trans
+                             &trans           &tog 4           &lt 2 SPACE        &mt LEFT_GUI TAB    &trans  &kp ENTER  &lt 1 BACKSPACE     &kp ESC
+                                                                                                      &trans
             >;
 
             label = "Canary";
@@ -196,11 +195,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_NXT  &trans  &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans          &kp UP_ARROW      &trans         &trans   &kp BSPC
-&to 5       &trans  &trans       &hrm LEFT_GUI KP_N4        &hrm LEFT_SHIFT KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
-&trans      &trans  &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)    &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans   &kp PG_DN
-                    &kp LS(F12)  &kp KP_NUMBER_0  &trans           &kp LEFT_ALT       &mmv MOVE_RIGHT  &kp INS             &kp DEL         &trans
-                                                                                      &mkp LCLK
+&bt BT_NXT  &trans  &trans       &kp KP_NUMBER_7      &kp KP_NUMBER_8              &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans          &kp UP_ARROW      &trans         &trans   &kp BSPC
+&to 5       &trans  &trans       &hrm LEFT_GUI KP_N4  &hrm LEFT_SHIFT KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
+&trans      &trans  &trans       &kp KP_NUMBER_1      &kp KP_NUMBER_2              &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)    &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans   &kp PG_DN
+                    &kp LS(F12)  &kp KP_NUMBER_0      &trans                       &kp LEFT_ALT       &mmv MOVE_RIGHT  &kp INS             &kp DEL         &trans
+                                                                                                      &mkp LCLK
             >;
 
             label = "NUMBER";
