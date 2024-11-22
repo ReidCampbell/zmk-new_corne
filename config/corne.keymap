@@ -216,11 +216,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI  &trans
-&trans  &trans    &trans  &trans    &trans    &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &trans    &trans
-&trans  &trans    &trans  &none     &kp F20   &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans    &trans
-                  &trans  &trans    &trans    &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                           &mkp LCLK
+&trans  &kp EXCL  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI         &trans
+&trans  &trans    &trans  &trans     &trans    &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp NON_US_HASH  &trans
+&trans  &trans    &trans  &none      &kp F20   &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans           &trans
+                  &trans  &trans     &trans    &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+                                                            &mkp LCLK
             >;
 
             label = "SYMBOL";
