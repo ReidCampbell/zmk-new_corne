@@ -123,7 +123,7 @@ layers:
   - {t: '=', s: +}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - '#'
+  - Alt+ 3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
