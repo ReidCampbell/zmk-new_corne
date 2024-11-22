@@ -98,7 +98,7 @@
         };
 
         Del {
-            bindings = <&kp DEL>;
+            bindings = <&kp ENTER>;
             key-positions = <21 22 23>;
         };
 
@@ -216,9 +216,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH      &kp GRAVE
-&trans  &trans    &trans  &none     &kp F20   &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE      &kp TILDE
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI  &trans
+&trans  &trans    &trans  &trans    &trans    &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &trans    &trans
+&trans  &trans    &trans  &none     &kp F20   &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans    &trans
                   &trans  &trans    &trans    &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
                                                            &mkp LCLK
             >;
