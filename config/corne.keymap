@@ -216,11 +216,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL                &kp AT                  &kp POUND               &kp DLLR                &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI          &trans
-&trans  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F1))))  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp LA(NUMBER_3)  &trans
-&trans  &trans                  &trans                  &none                   &kp F20                 &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans            &trans
-                                &trans                  &trans                  &trans                  &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                                                                                     &mkp LCLK
+&trans  &kp EXCL                 &kp AT                  &kp POUND               &kp DLLR                &kp PRCNT                 &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI          &trans
+&trans  &kp LS(LA(LC(LG(F4))))   &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F5))))    &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp LA(NUMBER_3)  &trans
+&trans  &kp LS(LA(LC(LG(F10))))  &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F8))))  &kp LS(LA(LC(LG(F7))))  &kp LS(LA(LC(LG(F6))))    &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans            &trans
+                                 &trans                  &trans                  &trans                  &kp SPACE                 &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+                                                                                                                                   &mkp LCLK
             >;
 
             label = "SYMBOL";
