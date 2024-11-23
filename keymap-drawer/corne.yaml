@@ -41,11 +41,11 @@ layers:
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - '&mkp MB4'
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
+  - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -113,10 +113,10 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+ F4
+  - Hyper+ F3
+  - Hyper+ F2
+  - Hyper+ F1
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
