@@ -175,11 +175,11 @@
 
         layer_4 {
             bindings = <
-&trans  &kp W                &kp L            &kp Y            &kp P              &kp B               &trans  &kp Z      &kp F               &kp O             &kp U             &kp APOS              &trans
-&trans  &hrm LEFT_CONTROL C  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &kp G               &trans  &kp M      &hrm RIGHT_SHIFT N  &hrm RIGHT_GUI E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL A  &trans
-&trans  &kp Q                &kp J            &kp V            &kp D              &kp K               &trans  &kp X      &kp H               &kp FSLH          &kp COMMA         &kp DOT               &trans
-                             &trans           &tog 4           &lt 2 SPACE        &mt LEFT_GUI TAB    &trans  &kp ENTER  &lt 1 BACKSPACE     &kp ESC
-                                                                                                      &trans
+&trans  &kp W                &kp L            &kp Y            &kp P              &kp B       &trans  &kp Z      &kp F               &kp O             &kp U             &kp APOS              &trans
+&trans  &hrm LEFT_CONTROL C  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &kp G       &trans  &kp M      &hrm RIGHT_SHIFT N  &hrm RIGHT_GUI E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL A  &trans
+&trans  &kp Q                &kp J            &kp V            &kp D              &kp K       &trans  &kp X      &kp H               &kp FSLH          &kp COMMA         &kp DOT               &trans
+                             &trans           &mkp MB4         &lt 2 SPACE        &mkp MB5    &trans  &lt 3 DEL  &lt 1 BACKSPACE     &kp ESC
+                                                                                              &trans
             >;
 
             label = "Canary";
@@ -216,11 +216,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI          &trans
-&trans  &trans    &trans  &trans     &trans    &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp LA(NUMBER_3)  &trans
-&trans  &trans    &trans  &none      &kp F20   &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans            &trans
-                  &trans  &trans     &trans    &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                            &mkp LCLK
+&trans  &kp EXCL                &kp AT                  &kp POUND               &kp DLLR                &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTERISK   &kp COLON  &kp SEMI          &trans
+&trans  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F1))))  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp LA(NUMBER_3)  &trans
+&trans  &trans                  &trans                  &none                   &kp F20                 &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans            &trans
+                                &trans                  &trans                  &trans                  &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+                                                                                                                     &mkp LCLK
             >;
 
             label = "SYMBOL";
