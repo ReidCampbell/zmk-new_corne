@@ -40,7 +40,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
   - '&mkp MB4'
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - '&mkp MB5'
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
   NUMBER:
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
