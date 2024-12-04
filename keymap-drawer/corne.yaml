@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '5', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 0
   - {t: KP 4, h: '$$mdi:apple-keyboard-command$$'}
   - {t: KP 5, h: '$$mdi:apple-keyboard-shift$$'}
   - KP 6
@@ -92,7 +92,7 @@ layers:
   - Sft+ F12
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - INS
   - {t: '$$mdi:backspace-reverse-outline$$', type: held}
