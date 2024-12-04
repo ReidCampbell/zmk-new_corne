@@ -196,11 +196,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_NXT  &trans  &trans       &kp KP_NUMBER_7      &kp KP_NUMBER_8              &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans          &kp UP_ARROW      &trans         &trans   &kp BSPC
-&to 5       &trans  &trans       &hrm LEFT_GUI KP_N4  &hrm LEFT_SHIFT KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
-&trans      &trans  &trans       &kp KP_NUMBER_1      &kp KP_NUMBER_2              &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)    &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans   &kp PG_DN
-                    &kp LS(F12)  &kp KP_NUMBER_0      &trans                       &kp LEFT_ALT       &mmv MOVE_RIGHT  &kp INS             &kp DEL         &trans
-                                                                                                      &mkp LCLK
+&bt BT_NXT  &trans  &trans           &kp KP_NUMBER_7      &kp KP_NUMBER_8              &kp KP_NUMBER_9    &mmv MOVE_UP     &trans              &trans          &kp UP_ARROW      &trans         &trans   &kp BSPC
+&to 5       &trans  &kp KP_NUMBER_0  &hrm LEFT_GUI KP_N4  &hrm LEFT_SHIFT KP_NUMBER_5  &kp KP_NUMBER_6    &mmv MOVE_DOWN   &kp HOME            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT      &kp END  &kp PG_UP
+&trans      &trans  &trans           &kp KP_NUMBER_1      &kp KP_NUMBER_2              &kp KP_NUMBER_3    &mmv MOVE_LEFT   &kp LA(LEFT_ARROW)  &kp LA(DOWN)    &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans   &kp PG_DN
+                    &kp LS(F12)      &kp KP_NUMBER_0      &trans                       &kp LEFT_GUI       &mmv MOVE_RIGHT  &kp INS             &kp DEL         &trans
+                                                                                                          &mkp LCLK
             >;
 
             label = "NUMBER";
